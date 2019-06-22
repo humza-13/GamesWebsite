@@ -7,17 +7,6 @@ var { user } = require('./../db-models/user');
 router.get("/", (req, res) => {
 
 
-    res.render('contact.hbs', { css: ['styles.css'] }, {
-        myUsername: req.session.username,
-        myEmail: req.session.email,
-
-        getUsername: function() {
-            return req.myUsername;
-        }
-    });
-
-
-
-
+    res.render('contact.hbs', { css: ['styles.css'] })
 });
 module.exports = router;
