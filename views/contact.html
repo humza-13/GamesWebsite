@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!---links--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!---links--->
+
+
+</head>
+
+<body>
+
+    <!---navbar start--->
+    <header>
+        <nav class="navbar bg-transparent fixed-top navbar-expand-lg navbar-dark">
+
+            <a class="navbar-brand logo" href="home"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="story">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games">Games</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <a href="logout">
+                <button type="button" class="btn-1 btn-outline-primary">logout</button>
+            </a>
+        </nav>
+
+    </header>
+    <!---navbar end--->
+
+    <!---Full Image start--->
+
+    <div class="container-fluid">
+        <div class="card bg-dark text-white  apply-margin">
+            <img src="/Images/contact.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="width:20%;text-align:center; margin-left:42%;margin-top:25%;">
+                <div class="loader">
+                    <span>S</span>
+                    <span>U</span>
+                    <span>P</span>
+                    <span>P</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>T</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---Full Image end--->
+    <!---email start--->
+
+
+
+
+    <div class="section-12345">
+
+
+        <div class="row" style="background-color: black;">
+
+
+            <p style="margin:auto; color:white;"> <span style="color:#ff6600;">Email us:</span> ubaid.umer55555@gmail.com<span style="color:#ff6600;"> Call us: </span>+9203201238891</p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!---email end--->
+
+    <!---contact us start--->
+
+
+
+    <div class="container-fluid" style="background-color:#1a0008;">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xl-6 " data-aos="flip-right">
+                <form action="" method="POST" class="mt-4" style="padding-bottom:25px;">
+
+
+                    <label for="" class="text-white"><h4>Personal Details</h4></label>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" id="fname" class="form-control" placeholder="First Name">
+                        </div>
+                        <span id="invalidfname" style="color: #ff2929;"></span>
+                    </div>
+
+
+
+
+                    <div class="form-row mt-5">
+                        <div class="col">
+                            <input type="text" name="phone" id="no" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <span id="invalidno" style="color: #ff2929;"></span>
+                    </div>
+                    <div class="for-row mt-5">
+                        <div class="col">
+
+                            <label for="" class="text-white"><h4>Comments</h4></label>
+                            <textarea name="comment" id="comments" rows="5" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <span id="invalidcomment" style="color: #ff2929;"></span>
+                    </div>
+
+
+                    <div class="for-row mt-3">
+                        <div class="col">
+
+                            <label for="" class="text-white"><h4>Your Issue</h4></label>
+                            <textarea name="issue" id="issue" rows="5" class="form-control" placeholder="Optional"></textarea>
+
+                        </div>
+                    </div>
+                    <input type="submit" id="submit" class="btn btn-success" onclick="checkemail() , checkname() , checknumber() , checkcomments()" value="submit ">
+                </form>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xl-6 " data-aos="flip-left">
+                <div class="space">
+                    <ul style="list-style-type:none;">
+
+                        <li>
+                            <h5> Address </h5>
+                            <p> House#14/A street #4 akram park near ghalib market oppostie to m.m.alam road, gullberg 3 ,lahore </p>
+                        </li>
+
+                        <li>
+                            <h5> We are Open</h5>
+                            <p>Open hours: 9:00-18:00 Monday-saturday</p>
+                        </li>
+
+
+
+                        <li>
+                            <h5>Our Main Office</h5>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.460658291043!2d74.20888971441981!3d31.401431860148843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918ffd0bc7c5f71%3A0x879e9b82857bcd94!2sCOMSATS+University+Islamabad%2C+Lahore+Campus!5e0!3m2!1sen!2s!4v1552721969254"
+                                width="100%" height="320px" frameborder="0" style="border:0; margin-top:0px;" allowfullscreen></iframe>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!---conact us end--->
+
+
+
+    <!---Footer start--->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <p>
+                    Download the Let's Play Andriod App From Google Play
+                </p>
+            </div>
+            <div id="horizontal-line" style="background-color:white; margin-top:20px;margin-bottom:20px;">
+                </ "></div>
+<div class="row ">
+
+    <div class="col-md-3 mr-auto ">
+    
+    <ul>
+    <li><a><img src="/Images/controller.png " style="margin-top:20px; "></a></li>
+    <li><a style="color:white ;margin-left:5px; ">Let's Play </a></li>
+    <li style="margin-left:5px; color: white; "><a ><b> <a>Home </a>· <a>Story </a>· <a>Games </a>·<a> Contact </a>·<a> Play</a></b></a></li>
+    <li><a style="color:white ;margin-left:5px; ">Licence © 2019</a></li>
+    
+    </ul>
+    
+    
+    </div>
+    <div class="col-md-3 m-auto ">
+    
+    
+      <div class="footer-center ">
+      <div>
+        <i class="fa fa-map-marker "></i>
+        <p><span>21 Revolution Street</span> Paris, France</p>
+      </div>
+    
+      <div>
+        <i class="fa fa-phone "></i>
+        <p>+92320-1238891</p>
+      </div>
+    
+      <div>
+        <i class="fa fa-envelope "></i>
+        <p><a href="ubaid.umer555@gmail.com ">ubaid.umer555@gmail</a></p>
+      </div>
+    
+    </div>
+    
+      </div>
+      <div class="col-md-3 ml-auto " >
+    
+        <ul>
+        <li style="margin:20px; "><a><span style="color:white; ">About the company</span></a></li>
+        <li><a><p style="color:white; ">Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p> </a></li>
+    
+        </ul>
+        
+        
+        </div>
+    
+    
+    </div>
+    <div id="horizontal-line " style="background-color:black; margin-top:20px;margin-bottom:20px; "></div>
+    <div class="container " >
+
+        <a class="btn-12 " href=" ">
+          <i class="fab fa-facebook-f "></i>
+        </a>
+        
+        <a class="btn-12 "href=" ">
+          <i class="fab fa-twitter "></i>
+        </a>
+        
+        <a class="btn-12 "href=" ">
+          <i class="fab fa-linkedin "></i>
+        </a>
+        
+        <a class="btn-12 "href=" ">
+          <i class="fab fa-google "></i>
+        </a>
+        
+        <a class="btn-12 "href=" ">
+          <i class="fab fa-instagram "></i>
+        </a>
+        
+        </div>
+
+</div>
+<div class="row ">
+<p>
+    Copyright @UBAIDGAMING <span style="color:crimson; ">Mr.Chiko</span>
+</p>
+</div>
+</footer>
+<!---Footer end--->
+
+
+
+
+
+
+
+ <!---javascript--->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <!---javascript--->
+
+
+  <!---AOS ANIMATION--->
+<script>
+  AOS.init();
+</script>
+<!---AOS ANIMATION--->
+
+<!---navbar animation--->
+<script type="text/javascript ">
+  $(document).ready(function () {
+
+    // Transition effect for navbar 
+    $(window).scroll(function () {
+
+      // checks if window is scrolled more than 150, adds/removes bg-custom class
+      if ($(this).scrollTop() > 150) {
+
+        $('.navbar').removeClass('bg-transparent');
+        $('.navbar').addClass('bg-custom');
+
+      } else {
+        $('.navbar').removeClass('bg-custom');
+        $('.navbar').addClass('bg-transparent');
+      }
+    });
+  });
+</script>
+<!---navbar animation--->
+
+
+<!---feedback validation start--->
+<script>
+function checkname(){
+
+let fname=document.getElementById("fname ").value;
+let lname=document.getElementById("lname ").value;
+let regix=/[^a-zA-Z]/gi;
+
+if(fname==" "){
+
+document.getElementById("invalidfname ").innerHTML="EMPTY INPUT! ";
+
+}
+else if(fname.match(regix)||fname==" "){
+let invalid="* Invalid Input! Special Characters and Numbers are not allowed. "
+document.getElementById("invalidfname ").innerHTML=invalid;
+
+}else{
+
+  document.getElementById("invalidfname ").innerHTML=" ";
+
+
+}
+
+if(lname==" "){
+
+  document.getElementById("invalidlname ").innerHTML="EMPTY INPUT! ";
+
+}
+else if(lname.match(regix)){
+let invalid="* Invalid Input! Special Characters and Numbers are not allowed. "
+document.getElementById("invalidlname ").innerHTML=invalid;
+
+}else{
+
+document.getElementById("invalidlname ").innerHTML=" ";
+
+
+}
+
+}
+
+function checkemail(){
+
+let email=document.getElementById("email ").value;
+let regix=/[a-zA-Z0-9]+[.|_]{0,1}[a-zA-Z0-9]+@[a-zA-z]+.com/;
+let invalid="* Invalid Input! Email not allowed. "
+
+
+if(email==" "){
+  document.getElementById("invalidemail ").innerHTML="EMPTY INPUT! "
+}
+else if(!email.match(regix)){
+
+  document.getElementById("invalidemail ").innerHTML=invalid;
+
+}else{
+
+
+  document.getElementById("invalidemail ").innerHTML=" ";
+
+
+}
+}
+function checknumber(){
+  let number=document.getElementById("no ").value;
+  let regix=/[+]{1}[0-9]+/;
+  let invalid="Invalid Input!Number must be like +9214353454 ";
+   
+   
+   if(number==" "){
+
+    document.getElementById("invalidno ").innerHTML="EMPTY INPUT! "
+   }
+   else if(!number.match(regix)){
+
+document.getElementById("invalidno ").innerHTML=invalid;
+
+}else{
+
+
+document.getElementById("invalidno ").innerHTML=" ";
+
+
+}
+}
+
+function checkcomments(){
+
+let comment=document.getElementById("comments ").value;
+if(comment==" "){
+
+document.getElementById("invalidcomment ").innerHTML="* EMPTY COMMENT SECTION! ";
+
+}else{
+
+
+  document.getElementById("invalidcomment ").innerHTML=" ";
+
+
+}
+
+
+
+}
+
+</script>
+
+<!---feedback validation end--->
+
+
+
+</body>
+</html>

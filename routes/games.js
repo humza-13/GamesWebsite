@@ -5,8 +5,10 @@ var { user } = require('./../db-models/user');
 
 
 router.get("/", (req, res) => {
-
-
-    res.render('Games.hbs', { css: ['styles.css'] })
+    if (req.session.email) {
+        res.render('games.html')
+    } else {
+        res.redirect('/login?session=expired');
+    }
 });
 module.exports = router;

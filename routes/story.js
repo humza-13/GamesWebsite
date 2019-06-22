@@ -7,6 +7,6 @@ var { user } = require('./../db-models/user');
 router.get("/", (req, res) => {
 
 
-    res.render('story.hbs', { css: ['styles.css'] })
+    res.render('story.html')
 });
 module.exports = router;

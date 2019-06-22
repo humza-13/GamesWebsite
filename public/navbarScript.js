@@ -1,6 +1,3 @@
-AOS.init();
-
-
 $(document).ready(function() {
 
     // Transition effect for navbar 

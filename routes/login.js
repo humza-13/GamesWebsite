@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     console.log(req.body.email),
         console.log(req.body.password1)
         //validation
-    req.check('password', 'Minimum length of user should be 8').isLength({ min: 8 });
+    req.check('password1', 'Minimum length of user should be 8').isLength({ min: 8 });
 
     // gettting any errors
     var errors = req.validationErrors();
